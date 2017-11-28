@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Additional-tasks</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		// Task 1
+		const a = 5;
+		const b = 10;
+		let result;
+		console.log(resutl = a + b);
+		console.log(resutl = a - b);
+		console.log(resutl = a * b);
+		console.log(resutl = a / b);
+		console.log(resutl = a % b);
+
+		// Task 2
+		const day = '02';
+		const month = '10';
+		const year = '2017';
+		const date = day + '/' + month + '/' + year;
+		console.log(date);
+
+		// Task 3
+		const message = prompt("Enter any message:", "");
+		// здесь заменить 'str' и 'STR' на message и вызов метода
+		let inLowerCase = message.toLowerCase(); // -> "success: in all lowercase"
+		let inUpperCase = message.toUpperCase(); // -> "success: in all uppercase"
+		console.log(checkCase(inLowerCase)); // success: in all lowercase
+		console.log(checkCase(inUpperCase)); // success: in all uppercase
+		//============= Функция для проверки кода ================= //
+		function checkCase(str) {
+		  if (str && str === str.toLowerCase()) {
+		    return "success: in all lowercase";
+		  } else if (str && str === str.toUpperCase()) {
+		    return "success: in all uppercase";
+		  }
+		  return "error: not in all lowercase or uppercase";
+		}
+		//============= end Функция для проверки кода ============== //
+
+		// Task 4
+		const name = 'Mango';
+		const typingSpeed = 50;
+		const messageMango = `${name} печатает со скоростью ${typingSpeed} знаков в минуту.`;
+		console.log(messageMango); // Mango печатает со скоростью 50 знаков в минуту.
+
+		// Task 5
+		const paddingInt = "20px";
+		const borderInt = "5px";
+		const contentWidthInt = "100px";
+		let totalWidthInt = parseInt(paddingInt) + parseInt(borderInt) + parseInt(contentWidthInt) + 'px';
+		console.log(totalWidthInt); // '125px'
+
+		// Task 6
+		const paddingFloat = "20.25px";
+		const borderFloat = "5.15px";
+		const contentWidthFloat = "100.45px";
+		let totalWidthFloat = parseFloat(paddingFloat) + parseFloat(borderFloat) + parseFloat(contentWidthFloat) + 'px';
+		console.log(totalWidthFloat); // '125.85px'
+
+		// Task 7
+		const z = 0.1;
+		const x = 0.2;
+		const c = 0.3;
+
+		// Исправить вычисления тут
+		const summ = ( (z * 100 + x * 100 + c * 100) / 100 );
+		console.log(summ);
+		console.log(0.6 === summ); // должно быть true
+
+	</script>
+
+</body>
+</html>
