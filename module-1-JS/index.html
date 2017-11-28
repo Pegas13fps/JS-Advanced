@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module-1-JS</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		const firstLineText = "qwertyuiop[]";
+		console.log(firstLineText);
+		const secondLine = "asdfghjkl;\\'";
+		console.log(secondLine);
+		const thirdLine = "zxcvbnm,./";
+		console.log(thirdLine);
+
+		const lengthFirstLine = firstLineText.length;
+		console.log(lengthFirstLine);
+		const lengthSecondLine = secondLine.length;
+		console.log(lengthSecondLine);
+		const lengthThirdLine = thirdLine.length;
+		console.log(lengthThirdLine);
+
+		
+		console.log('Первый символ первой строки:', firstLineText.charAt(0));
+		console.log('Последний символ первой строки:', firstLineText.charAt(11));
+		console.log('Первый символ второй строки:', secondLine.charAt(0));
+		console.log('Последний символ второй строки:', secondLine.charAt(11));
+		console.log('Первый символ третьей строки:', thirdLine.charAt(0));
+		console.log('Последний символ третьей строки:', thirdLine.charAt(9));
+
+		let indexFirstSymbol = firstLineText.indexOf('[');
+		console.log(indexFirstSymbol);
+		let indexSecondSymbol = firstLineText.indexOf(']');
+		console.log(indexSecondSymbol);
+
+		let allMeanings = `firstLineText - ${firstLineText}, lengthFirstLine - ${lengthFirstLine}, indexFirstSymbol - ${indexFirstSymbol}, indexSecondSymbol - ${indexSecondSymbol}`;
+		console.log(allMeanings);
+
+	</script>
+
+</body>
+</html>
