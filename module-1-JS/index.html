@@ -22,12 +22,17 @@
 		console.log(lengthThirdLine);
 
 		
-		console.log('Первый символ первой строки:', firstLineText.charAt(0));
-		console.log('Последний символ первой строки:', firstLineText.charAt(11));
-		console.log('Первый символ второй строки:', secondLine.charAt(0));
-		console.log('Последний символ второй строки:', secondLine.charAt(11));
-		console.log('Первый символ третьей строки:', thirdLine.charAt(0));
-		console.log('Последний символ третьей строки:', thirdLine.charAt(9));
+		console.log('First char first line:', firstLineText.charAt(0));
+		var lastCharFL = firstLineText.charAt(firstLineText.length -1);
+		console.log(`Last char first line: ${lastCharFL}`);
+
+		console.log('First char second line:', secondLine.charAt(0));
+		var lastCharSL = secondLine.charAt(secondLine.length -1);
+		console.log(`Last char second line: ${lastCharSL}`);
+
+		console.log('First char third line:', thirdLine.charAt(0));
+		var lastCharTL = thirdLine.charAt(thirdLine.length -1);
+		console.log(`Last char third line: ${lastCharTL}`);
 
 		let indexFirstSymbol = firstLineText.indexOf('[');
 		console.log(indexFirstSymbol);
