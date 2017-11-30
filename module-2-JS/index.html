@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module-2-JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let sharm = 15;
+	let hurgada = 25;
+	let taba = 6;
+
+	let numberPeople = prompt("Введите кол-во людей желающих поехать в тур:", ); 
+
+	if (numberPeople >= 1 && numberPeople % 1 === 0) {
+		if (numberPeople <= sharm && confirm("Есть места в туре Шарм-еш-Шейх")) {
+			console.log('Осталось мест в Шарм-еш-Шейх: ', sharm - numberPeople);
+		}
+		else if (numberPeople <= hurgada && confirm("Есть места в туре Хургада")) {
+			console.log('Осталось мест в Хургада: ', hurgada - numberPeople);
+		}
+		else if (numberPeople <= taba && confirm("Есть места в туре Таба")) {
+			console.log('Осталось мест в Таба: ', taba - numberPeople);
+		}
+		else {
+			alert('Мест нет!');
+		}
+	}
+	else {
+		alert('Введите коректное число!');
+	}
+	</script>
+</body>
+</html>
