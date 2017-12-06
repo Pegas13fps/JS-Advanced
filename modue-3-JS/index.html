@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module-2-JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	const alphabet = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+
+	let firstLine = alphabet.slice(0, 12);
+	let secondLine = alphabet.slice(12, 23);
+	let thirdLine = alphabet.slice(23, 33);
+
+	let arrFirstLine = firstLine.split("");
+	console.log(arrFirstLine);
+	let arrSecondLine = secondLine.split("");
+	console.log(arrSecondLine);
+	let arrThirdLine = thirdLine.split("");
+	console.log(arrThirdLine);
+
+	let keyboard = new Array(arrFirstLine, arrSecondLine, arrThirdLine);
+	console.log(keyboard);
+
+	let wordHello = (keyboard[1][5] + keyboard[0][2] + keyboard[1][8] + keyboard[1][8] + keyboard[0][8]);
+	console.log(wordHello);
+
+	let wordJavascript = (keyboard[1][6] + keyboard[1][0] + keyboard[2][3] + keyboard[1][0] + keyboard[1][1] + keyboard[2][2] + keyboard[0][3] + keyboard[0][7] + keyboard[0][9] + keyboard[0][4]);
+	console.log(wordJavascript);
+
+	let wordTrainer = (keyboard[0][4] + keyboard[0][3] + keyboard[1][0] + keyboard[0][7] + keyboard[2][5] + keyboard[0][2] + keyboard[0][3]);
+	console.log(wordTrainer);
+	
+	</script>
+</body>
+</html>
