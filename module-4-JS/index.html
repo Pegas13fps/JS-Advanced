@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module-4-JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	// 4 module 1-task
+	function addKeyboardLayout(alphabet) {
+		var firstLine = alphabet.slice(0, 12);
+		var secondLine = alphabet.slice(12, 23);
+		var thirdLine = alphabet.slice(23, 33);
+
+		var arrFirstLine = firstLine.split("");
+		var arrSecondLine = secondLine.split("");
+		var arrThirdLine = thirdLine.split("");
+
+		var keyboard = new Array(arrFirstLine, arrSecondLine, arrThirdLine);
+
+		return keyboard;
+	}
+	console.log("This output function:", addKeyboardLayout("qwertyuiop[]asdfghjkl;'zxcvbnm,./"));
+
+
+	// 2-task
+	function getRandCharInRow(row) {
+		if (row != NaN && row >= 0 && row <= 3) {
+			let keyboard = ["qwertyuiop[]", "asdfghjkl;'", "zxcvbnm,./"];
+			let foo = keyboard[row - 1];
+			let bar = Math.floor(Math.random() * (foo.length - 1));
+			return foo[bar];
+		}
+		else {
+			alert("Uncorrect data, try again");
+		}	
+	}
+	console.log(getRandCharInRow(2));
+
+
+	// 3-task
+	function getRandCharInAlph() {
+		let alphabet = "abcdefghijklmnopqrstuvwxyz";
+		let bar = alphabet.split("");
+		let rundomChar = Math.floor(Math.random() * (bar.length - 1));
+
+		return bar[rundomChar];
+	}
+	console.log(getRandCharInAlph());
+	
+	</script>
+</body>
+</html>
