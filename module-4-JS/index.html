@@ -9,15 +9,13 @@
 
 	// 4 module 1-task
 	function addKeyboardLayout(alphabet) {
-		var firstLine = alphabet.slice(0, 12);
-		var secondLine = alphabet.slice(12, 23);
-		var thirdLine = alphabet.slice(23, 33);
+		let keyboardString = alphabet.split("");
 
-		var arrFirstLine = firstLine.split("");
-		var arrSecondLine = secondLine.split("");
-		var arrThirdLine = thirdLine.split("");
+		let arrFirstLine = keyboardString.slice(0, 12);
+		let arrSecondLine = keyboardString.slice(12, 23);
+		let arrThirdLine = keyboardString.slice(23, 33);
 
-		var keyboard = new Array(arrFirstLine, arrSecondLine, arrThirdLine);
+		let keyboard = new Array(arrFirstLine, arrSecondLine, arrThirdLine);
 
 		return keyboard;
 	}
