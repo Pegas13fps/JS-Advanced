@@ -28,20 +28,19 @@
     langs: ['en', 'ru', 'ua'],
     currentLang: ''
 };
-
-	var stringNumber = parseInt(prompt("Enter number of langwich", "en-0, ru-1, ua-2"));  
-  
+	// Task 1 Module-5
+	let stringNumber = parseInt(prompt("Enter number of langwich", "en-0, ru-1, ua-2"));
 	while (stringNumber <= -1 || stringNumber >= 3 || isNaN(stringNumber))  
 	{  
 	  stringNumber = parseInt(prompt("Number not correct!, please enter correct number 0-2", "en-0, ru-1, ua-2"));
 	}    
-	
 	console.log(stringNumber);
 
-		keyboard.currentLang = keyboard.langs[stringNumber];
-		console.log(keyboard.currentLang);
+	// Task 2
+	keyboard.currentLang = keyboard.langs[stringNumber];
+	console.log(keyboard.currentLang);
 	
-		
+	// Task 3
 	function getRandCharInAlph() {
 		for(key in keyboard.layouts){
 			if (keyboard.currentLang == key){
