@@ -25,7 +25,7 @@
 	// 2-task
 	function getRandCharInRow(row) {
 		if (row != NaN && row >= 0 && row <= 3) {
-			let keyboard = ["qwertyuiop[]", "asdfghjkl;'", "zxcvbnm,./"];
+			const keyboard = ["qwertyuiop[]", "asdfghjkl;'", "zxcvbnm,./"];
 			let foo = keyboard[row - 1];
 			let bar = Math.floor(Math.random() * (foo.length - 1));
 			return foo[bar];
@@ -39,7 +39,7 @@
 
 	// 3-task
 	function getRandCharInAlph() {
-		let alphabet = "abcdefghijklmnopqrstuvwxyz";
+		const alphabet = "abcdefghijklmnopqrstuvwxyz";
 		let bar = alphabet.split("");
 		let rundomChar = Math.floor(Math.random() * (bar.length - 1));
 

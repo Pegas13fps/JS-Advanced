@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module-5-JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	const keyboard = {
+    layouts: {
+        en: {
+            topRow: ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"],
+            middleRow: ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'"],
+            bottomRow: ["z", "x", "c", "v", "b", "n", "m", ",", ".", "/"]
+        },
+        ru: {
+            topRow: ["й", "ц", "у", "к", "е", "н", "г", "ш", "щ", "з", "х", "ъ"],
+            middleRow: ["ф", "ы", "в", "а", "п", "р", "о", "л", "д", "ж", "э", "\\"],
+            bottomRow: [ "я", "ч", "с", "м", "и", "т", "ь", "б", "ю", "."]
+        },
+        ua: {
+            topRow: ["й", "ц", "у", "к", "е", "н", "г", "ш", "щ", "з", "х", "ї"],
+            middleRow: ["ф", "і", "в", "а", "п", "р", "о", "л", "д", "ж", "є", "\\"],
+            bottomRow: ["я", "ч", "с", "м", "и", "т", "ь", "б", "ю", "."]
+        }
+    },
+    langs: ['en', 'ru', 'ua'],
+    currentLang: ''
+};
+
+	var stringNumber = parseInt(prompt("Enter number of langwich", "en-0, ru-1, ua-2"));  
+  
+	while (stringNumber <= -1 || stringNumber >= 3 || isNaN(stringNumber))  
+	{  
+	  stringNumber = parseInt(prompt("Number not correct!, please enter correct number 0-2", "en-0, ru-1, ua-2"));
+	}    
+	
+	console.log(stringNumber);
+
+		keyboard.currentLang = keyboard.langs[stringNumber];
+		console.log(keyboard.currentLang);
+	
+		
+	function getRandCharInAlph() {
+		for(key in keyboard.layouts){
+			if (keyboard.currentLang == key){
+				let alphabet = [];
+				for (key1 in keyboard.layouts[keyboard.currentLang]){
+					let obj = keyboard.layouts[keyboard.currentLang][key1];
+					alphabet = alphabet.concat(obj);				
+				}
+			alert(alphabet[Math.floor(Math.random() * (alphabet.length-1))]);
+			}
+		}
+	}
+	getRandCharInAlph();
+
+	</script>
+</body>
+</html>
