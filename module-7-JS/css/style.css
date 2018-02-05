@@ -1,0 +1,19 @@
+.topLine, .secondLine, .thirdLine, .button {
+	display: flex;
+	justify-content: center;
+}
+.button {
+	height: 10vh;
+	width: 10vh;
+	font-size: 4vh;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #808080;
+	align-items: center;
+	background-color: black;
+	color: aliceblue;
+}
+.button:hover {
+    background: linear-gradient(to top, #fcfcfc, #14130a);
+    border: 1px solid #333;
+}
